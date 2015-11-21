@@ -1,0 +1,23 @@
+{% include header.html %}  
+<main>
+  <div class="aspectwrapper">
+	 <figure class="hero-image" style="background-image: url('/assets/img/{{ page.hero-image }}');">
+	   <figcaption><h1>Kings Hill</h1><h2>Pre-school</h2></figcaption>
+	 </figure>
+  </div>
+
+{% assign which_section  = page.title | slugify %}
+{% assign page_sections = site.sections | where:"page", which_section %}
+{% assign sorted_sections = page_sections | sort: 'order' %}
+{% for section in sorted_sections %}
+    <div class="{% if section.divider == false %}no-divider {% endif %}cf page-section page-section-style-{{ section.style }}" id="{{ section.id }}">
+      <div class="{% unless section.container == false %}container {% endunless %}{% if section.container_classes %}{{section.container_classes}}{% endif %}">
+        {{ section.content }}
+      </div><!-- /.container -->
+    </div><!-- /.page-section -->
+    {% if section.divider %}{% include divider-up-arrow.html %}{% endif %}    
+{% endfor %}    
+
+{% include quote.html %}
+</main>
+{% include footer.html %}

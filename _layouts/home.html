@@ -1,0 +1,41 @@
+---
+---
+{% include header.html %}
+<main>
+  <div class="aspectwrapper">
+	 <figure class="hero-image" style="background-image: url('{{ site.url }}/assets/img/{{ page.hero-image }}');">
+	   <figcaption><h1 style="color:#201B1F;"">Kings Hill</h1><h2 style="color:#201B1F;"">Pre-school</h2></figcaption>
+	 </figure>
+  </div><!-- /.aspectwrapper -->
+
+<div class="cf page-section page-section-style-1 no-divider">
+  <div class="container">
+    {{ content }}
+  </div><!-- container -->
+</div><!-- page-section -->    
+   
+<div class="cf page-section page-section-style-1 no-divider">
+  <div class="container">
+    {% for post in site.categories.news limit:1 %}
+    {% include latest-news.html %}
+    {% endfor %}
+
+    {% include this-term.html %}
+  </div><!-- /container -->
+</div><!-- /page-section -->
+
+{% include quote.html %}
+
+<div class="cf page-section page-section-style-2 no-divider">
+  <div class="container">
+    <br>
+  
+    {% include link-box.html url="/our-pre-school" text="Our Pre-school" img="/assets/img/our-pre-school-300x300.jpg" %}  
+    {% include link-box.html url="/find-us" text="Find Us" img="/assets/img/find-us-300x300.jpg" %}
+    {% include link-box.html url="/contact-us" text="Contact Us" img="/assets/img/contact-us-300x300.jpg" %}
+    
+    <br>
+  </div>
+</div><!-- /page-section -->
+</main>
+{% include footer.html %}

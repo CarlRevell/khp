@@ -1,1 +1,59 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 9]>
+    <script>
+      var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+        "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+        "progress,section,time,video").split(',');
+      for (var i = 0; i < e.length; i++) {
+        document.createElement(e[i]);
+      }
+    </script>
+    <![endif]-->
+    <title>{{ page.title }} | {{ site.name }}</title>
+    <meta name="description" content="{{ site.description }}">
+	<meta name='robots' content='noindex,follow' />
+	<link rel="alternate" type="application/rss+xml" title="Kings Hill Pre-school &raquo; Home Comments Feed" href="{{ site.url }}/feed/">
+	<link rel='stylesheet' id='style-css'  href='{{ site.url }}/assets/css/style.css' type='text/css' media='all'>
+	<script type='text/javascript' src='{{ site.url }}/assets/js/jquery/jquery.js?ver=1.11.1'></script>
+	<script type='text/javascript' src='{{ site.url }}/assets/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>    
+</head>
+<body class="{{ page.title | slugify }}">
 
+<!-- ensure each content page has a suitable id="maincontent" container -->
+<div class="skiptocontent" id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
+
+<!-- site-header -->
+<header class="site-header">
+
+  <div class="container">
+  
+    <div class="cf contact-search-container">
+      <!-- search-block -->
+      <div class="search-block">
+        <form action="http://kingshillpreschool.carlsworld.co.uk/" id="searchform" method="get" role="search">
+          <div>
+            <label class="screen-reader" for="s" id="search-label">Search for:</label>
+            <input aria-labelledby="search-label" id="s" name="s" placeholder="" required type="search" value="">
+            <input type="submit" value="Search">
+          </div>
+        </form>
+      </div><!-- /search-block -->
+      <!-- contact-block -->
+      <div class="contact-block">
+        <a href="mailto:{{ site.social.email }}" title="email KingsHill Pre-school"><img class="contact-icon contact-icon-envelope" src="/assets/img/envelope-33x32.png" alt="envelope icon"></a><img class="contact-icon contact-icon-telephone" src="/assets/img/telephone-32x32.png" alt="telephone icon"> 01732 840 180
+      </div><!-- /contact-block -->
+    </div><!-- /contact-search-block -->
+
+    <div class="logo"><a href="{{ site.url }}"><img src="{{ site.url }}/assets/img/khp-logo-320.png" alt="Kings Hill Pre School Logo"></a></div>
+
+{% include nav.html %}
+
+</div><!-- /container -->
+
+</header><!-- /site-header -->

@@ -1,0 +1,61 @@
+ <footer class="site-footer">
+    <div class="logo"><img src="{{ site.url }}/assets/img/khp-logo-light-320.png" alt="Kings Hill Pre School Logo"></div>
+    <div class="container cf contact-and-social-container">
+        <div class="col-1-2 footer-contact-container">
+        <h2>Get In Touch</h2>
+<div class="screen-reader-response"></div>
+<form name="" action="" method="post" class="" novalidate="novalidate">
+<p><span class="contact-title"><input type="text" name="contact-title" value="" size="40" class="" aria-invalid="false" placeholder="Title" /></span> <span class="your-name"><input type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Name" /></span> <span class="your-email"><input type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Email" /></span></p>
+<p><span class="your-message"><textarea name="your-message" cols="40" rows="10" class="" aria-invalid="false" placeholder="Enquiry"></textarea></span></p>
+<p><input type="submit" value="Send" class="" /></p>
+</form>
+</div><!-- /footer-contact-container -->
+
+        <div class="col-1-2 footer-social-container">
+        
+            <h2>Connect</h2>            
+            <nav id="menu-social-media" class="menu-social-media">
+              <ul id="menu-social-media-items" class="menu-items">
+                {% if site.social.facebook %}<li><a href="https://www.facebook.com/{{ site.social.facebook }}">Facebook</a></li>{% endif %}
+              </ul>
+            </nav>            
+        </div><!-- /footer-social-container -->
+    </div>
+<div class="meta">
+  <p class="address">70 Gibson Drive, Kings Hill, West Malling. Kent ME19 4LG</p>
+  <p class="copyright">&copy; 2015 {{ site.name }}</p>
+</div>
+
+</footer>
+
+  <script type="text/javascript">
+  jQuery(document).ready(function() {
+    window.onhashchange = function() {
+      var hash = window.location.hash;
+      if (hash === '#top') return;
+          
+      jQuery('.active').removeClass('active');
+      jQuery('a[href$="' + hash + '"]').addClass("active");
+    }
+    
+    window.onhashchange();
+  });
+  </script>
+
+  <script type="text/javascript">
+  jQuery(document).ready(function() {
+    // add a class if a touch-enabled device
+    if ('ontouchstart' in document.documentElement) {
+      document.documentElement.className += ' touch';
+    } else {
+      document.documentElement.className += ' no-touch';
+    }
+
+    jQuery('.menu-item-has-children > a').click(function(e) {
+      e.preventDefault();
+      jQuery(this).parent().toggleClass('tap');
+    });
+  });
+  </script>
+</body>
+</html>

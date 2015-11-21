@@ -1,0 +1,12 @@
+<div class="quote-carousel-container">
+  <div class="container">
+    <div class="quote-body" id="quote-body"></div><!-- quote-body -->
+    <div class="quote-attribution" id="quote-attribution"></div><!-- quote-attribution -->
+  </div><!-- container -->
+</div><!-- quote-carousel-container -->
+<script>
+var quotes = {{ site.data.quotes | jsonify }};
+var rand = Math.floor(Math.random() * quotes.length);
+document.getElementById('quote-body').innerHTML = quotes[rand].quote;  
+document.getElementById('quote-attribution').innerHTML = quotes[rand].attribution;  
+</script>

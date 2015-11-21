@@ -1,0 +1,15 @@
+<aside class="latest-cat-container latest-cat-colour-orange">
+  <h2>Latest News Post</h2>
+  <div class="latest-cat-post">
+    <div class="aspect-square">        
+      <div class="latest-cat-date"><span class="latest-cat-date-day">{{ post.date | date: "%d" }}</span><span class="latest-cat-date-month-year">{{ post.date | date: "%b %Y" }}</span></div><!-- /latest-cat-date -->
+      <div class="latest-cat-image">
+      <div class="latest-cat-image-inner"><img width="5759" height="2966" src="{{ site.url }}/assets/img/children-reading-newsletter.jpg" class="attachment-post-thumbnail wp-post-image" alt="TPLT3419e" />      </div><!-- /latest-cat-image-inner -->
+    </div><!-- /latest-cat-image -->
+    <div class="latest-cat-header"><strong>{{ post.title }}</strong></div><!-- latest-cat-header -->
+    <div class="latest-cat-body">{{ post.content }}</div><!-- latest-cat-body -->
+    <div class="latest-cat-footer"><a href="{{ site.url }}{{ post.url }}">READ MORE</a></div><!-- latest-cat-footer -->
+    <a class="latest-cat-cover-link" href="{{ site.url }}{{ post.url }}"></a>
+  </div><!-- /aspect-square --></div><!-- /latest-cat-post -->
+
+</aside><!-- /latest-cat-container -->

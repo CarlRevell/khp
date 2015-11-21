@@ -1,0 +1,18 @@
+#Jekyll config file
+
+#Basics
+name: "Kings Hill Pre-school"
+
+# Permalinks
+permalink: pretty
+markdown: kramdown
+
+social:
+ twitter: Sprogz
+ facebook: carl.revell
+ email: info@kingshillpreschool.co.uk
+
+google_analytics: ''
+ 
+collections:
+ - sections

@@ -2,6 +2,7 @@
 
 #Basics
 name: "Kings Hill Pre-school"
+baseurl: /khp
 
 # Permalinks
 permalink: pretty

@@ -2,14 +2,14 @@
 <nav class="cf site-nav">
   <div class="">
     <ul id="menu-header-navigation-links" class="menu">
-      <li class="{% if current_page == 'home' %}current-menu-item{% endif %}"><a href="/">Home</a></li>
-      <li class="{% if current_page == 'our-pre-school' %}current-menu-item{% endif %} menu-item-has-children"><a href="{{ site.url }}/our-pre-school">Our Pre-school</a>
+      <li class="{% if current_page == 'home' %}current-menu-item{% endif %}"><a href="{{ site.baseurl }}">Home</a></li>
+      <li class="{% if current_page == 'our-pre-school' %}current-menu-item{% endif %} menu-item-has-children"><a href="{{ site.baseurl }}/our-pre-school">Our Pre-school</a>
         <ul class="sub-menu">
-          <li><a href="{{ site.url }}/our-pre-school/#ethos">Our Ethos</a></li>
-          <li><a href="{{ site.url }}/our-pre-school/#curriculum">Our Curriculum</a></li>
+          <li><a href="{{ site.baseurl }}/our-pre-school/#ethos">Our Ethos</a></li>
+          <li><a href="{{ site.baseurl }}/our-pre-school/#curriculum">Our Curriculum</a></li>
         </ul>
       </li>
-      <li class="{% if current_page == 'find-us' %}current-menu-item{% endif %}"><a href="{{ site.url }}/find-us/">Find Us</a></li>
+      <li class="{% if current_page == 'find-us' %}current-menu-item{% endif %}"><a href="{{ site.baseurl }}/find-us/">Find Us</a></li>
     </ul>
   </div>
 </nav>

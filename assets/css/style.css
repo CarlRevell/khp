@@ -7,22 +7,22 @@ Version: 1.0
 
 @font-face {
 	font-family: 'droid_serifregular';
-  src: url('/assets/fonts/DroidSerif-webfont.eot');
-  src: url('/assets/fonts/DroidSerif-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/DroidSerif-webfont.woff') format('woff'),
-       url('/assets/fonts/DroidSerif-webfont.ttf') format('truetype'),
-       url('/assets/fonts/DroidSerif-webfont.svg#droid_serifregular') format('svg');
+  src: url('../fonts/DroidSerif-webfont.eot');
+  src: url('../fonts/DroidSerif-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DroidSerif-webfont.woff') format('woff'),
+       url('../fonts/DroidSerif-webfont.ttf') format('truetype'),
+       url('../fonts/DroidSerif-webfont.svg#droid_serifregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'droid_sansregular';
-  src: url('/assets/fonts/DroidSans-webfont.eot');
-  src: url('/assets/fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/DroidSans-webfont.woff') format('woff'),
-       url('/assets/fonts/DroidSans-webfont.ttf') format('truetype'),
-       url('/assets/fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+  src: url('../fonts/DroidSans-webfont.eot');
+  src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DroidSans-webfont.woff') format('woff'),
+       url('../fonts/DroidSans-webfont.ttf') format('truetype'),
+       url('../fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -289,16 +289,16 @@ article.post:last-of-type {
 }
 
 #menu-social-media li a[href*="facebook.com"] {
-  background-image: url('/assets/img/social-facebook-x64.png');
+  background-image: url('../img/social-facebook-x64.png');
 }
 
 #menu-social-media li a[href*="twitter.com"] {
-  background-image: url('/assets/img/social-twitter-x64.png');
+  background-image: url('../img/social-twitter-x64.png');
   width: 64px;
 }
 
 #menu-social-media li a[href*="pinterest.com"] {
-  background-image: url('/assets/img/social-pinterest-x64.png');
+  background-image: url('../img/social-pinterest-x64.png');
   width: 35px;
 }
 
@@ -701,7 +701,7 @@ aside.latest-cat-container h2 {
 }
 
 .quote-carousel-container {
-	background-image: url(/assets/img/blackboard-and-shapes-1920x343.jpg);
+	background-image: url(../img/blackboard-and-shapes-1920x343.jpg);
   background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: 100% 100%;
@@ -811,7 +811,7 @@ aside.latest-cat-container h2 {
 .page-section-style-1 li,
 .shapes li,
 .shapes li.triangle {
-	background-image: url(/assets/img/bullet-triangle-x14.png);
+	background-image: url(../img/bullet-triangle-x14.png);
 	background-repeat: no-repeat;
 	background-position: 0 0.25em;
 	margin-top: 0.75em;
@@ -827,25 +827,25 @@ aside.latest-cat-container h2 {
 .page-section-style-1 li:nth-child(5n+2),
 .shapes li:nth-child(5n+2),
 .shapes li.square {
-	background-image: url(/assets/img/bullet-square-x14.png);
+	background-image: url(../img/bullet-square-x14.png);
 }
 
 .page-section-style-1 li:nth-child(5n+3),
 .shapes li:nth-child(5n+3),
 .shapes li.line {
-	background-image: url(/assets/img/bullet-line-x14.png);
+	background-image: url(../img/bullet-line-x14.png);
 }
 
 .page-section-style-1 li:nth-child(5n+4),
 .shapes li:nth-child(5n+4),
 .shapes li.hexagon {
-	background-image: url(/assets/img/bullet-hexagon-x14.png);
+	background-image: url(../img/bullet-hexagon-x14.png);
 }
 
 .page-section-style-1 li:nth-child(5n+5),
 .shapes li:nth-child(5n+5),
 .shapes li.circle {
-	background-image: url(/assets/img/bullet-circle-x14.png);
+	background-image: url(../img/bullet-circle-x14.png);
 }
 
 /*Link Boxes*/

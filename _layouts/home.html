@@ -3,7 +3,7 @@
 {% include header.html %}
 <main>
   <div class="aspectwrapper">
-	 <figure class="hero-image" style="background-image: url('{{ site.url }}/assets/img/{{ page.hero-image }}');">
+	 <figure class="hero-image" style="background-image: url('{{ site.baseurl }}/assets/img/{{ page.hero-image }}');">
 	   <figcaption><h1 style="color:#201B1F;"">Kings Hill</h1><h2 style="color:#201B1F;"">Pre-school</h2></figcaption>
 	 </figure>
   </div><!-- /.aspectwrapper -->
@@ -30,9 +30,9 @@
   <div class="container">
     <br>
   
-    {% include link-box.html url="/our-pre-school" text="Our Pre-school" img="/assets/img/our-pre-school-300x300.jpg" %}  
-    {% include link-box.html url="/find-us" text="Find Us" img="/assets/img/find-us-300x300.jpg" %}
-    {% include link-box.html url="/contact-us" text="Contact Us" img="/assets/img/contact-us-300x300.jpg" %}
+    {% include link-box.html url="{{ site.baseurl }}/our-pre-school" text="Our Pre-school" img="{{ site.baseurl }}/assets/img/our-pre-school-300x300.jpg" %}  
+    {% include link-box.html url="{{ site.baseurl }}/find-us" text="Find Us" img="{{ site.baseurl }}/assets/img/find-us-300x300.jpg" %}
+    {% include link-box.html url="{{ site.baseurl }}/contact-us" text="Contact Us" img="{{ site.baseurl }}/assets/img/contact-us-300x300.jpg" %}
     
     <br>
   </div>

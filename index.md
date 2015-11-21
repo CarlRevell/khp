@@ -4,7 +4,7 @@ title: Home
 hero-image: home-page-hero-image-1600x400.jpg
 show-quotes: true
 ---
-![Play Learn Love]({{ site.url }}/assets/img/play-learn-love-300x47.png){: .aligncenter }
+![Play Learn Love]({{ site.baseurl }}/assets/img/play-learn-love-300x47.png){: .aligncenter }
 
 Kings Hill Pre-School is community based and is managed by a committee of dedicated parents. We offer sessional care for young children between the ages of two and five.
 

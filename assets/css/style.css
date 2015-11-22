@@ -696,7 +696,7 @@ aside.latest-cat-container h2 {
 }
 
 .quote-carousel-container {
-	background-image: url("../img/blackboard-and-shapes-1920x343.jpg");
+	background-image: url("{{ site.baseurl }}/assets/img/blackboard-and-shapes-1920x343.jpg");
   background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: 100% 100%;

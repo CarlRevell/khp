@@ -11,3 +11,5 @@ style: 1
 Kings Hill Pre-School is located at the end of Gibson Drive in Kings Hill.
 
 From the roundabout with the big metal ball turn onto Gibson Drive and continue until just before the brick-road area where you will find the pre-school on your left.
+
+[Link to map image]({{ site.baseurl }}/assets/img/location-map.png)
